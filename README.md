@@ -53,6 +53,37 @@ Retrieve the parameter from the URL and use it in an API call to fetch one item.
 
 Display at least 3 properties from the item.
 
+### Contact
+
+Create a form with the following inputs and validation:
+
+-   First name - required, minimum 3 characters
+-   Last name - required, minimum 4 characters
+-   Email - required, must be in a valid email format
+-   Subject - required, this must be a select box with at least 2 options
+-   Message - required, minimum 10 characters.
+
+### Login
+
+Create a form with username/email and password fields. The inputs should have the necessary validation for a login form (not a registration form).
+
+The form should make a login request to either a Wordpress API with the JWT plugin installed or a Strapi API. If the login is successful redirect the user to the admin route.
+
+If the login is unsuccessful display a message above the form.
+
+### Admin
+
+This page will simply display an "Admin" heading.
+
+---
+
+## Level 2
+
+Add a favourite button/icon component to each result on your home page. Clicking this button will toggle the result in/out of a favourites array.
+
+Add a "/favourites" path to your routes. This page will display all the items currently in the favourites array.
+
+
 
 ## Getting Started
 
