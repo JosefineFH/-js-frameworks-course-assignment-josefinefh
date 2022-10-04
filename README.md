@@ -53,32 +53,22 @@ Retrieve the parameter from the URL and use it in an API call to fetch one item.
 
 Display at least 3 properties from the item.
 
-### Contact
 
-Create a form with the following inputs and validation:
+## Getting Started
 
--   First name - required, minimum 3 characters
--   Last name - required, minimum 4 characters
--   Email - required, must be in a valid email format
--   Subject - required, this must be a select box with at least 2 options
--   Message - required, minimum 10 characters.
+First, run the development server:
 
-### Login
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-Create a form with username/email and password fields. The inputs should have the necessary validation for a login form (not a registration form).
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-The form should make a login request to either a Wordpress API with the JWT plugin installed or a Strapi API. If the login is successful redirect the user to the admin route.
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-If the login is unsuccessful display a message above the form.
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-### Admin
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-This page will simply display an "Admin" heading.
-
----
-
-## Level 2
-
-Add a favourite button/icon component to each result on your home page. Clicking this button will toggle the result in/out of a favourites array.
-
-Add a "/favourites" path to your routes. This page will display all the items currently in the favourites array.
