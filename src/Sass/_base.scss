@@ -1,0 +1,19 @@
+.navbar {
+  border-bottom: solid black 1px;
+
+  .navbar-toggler{
+    border: none;
+
+    &:focus{
+      box-shadow:none
+    }
+  }
+  .nav-link{
+    color: black;
+    font-weight: 500;
+
+    &:hover{
+      color: goldenrod;
+    }
+  }
+}
