@@ -1,3 +1,4 @@
+
 # JS Frameworks Course Assignment
 
 ## Brief
@@ -21,12 +22,11 @@ Example
 ## Level 1
 
 Your app should have the following paths:
-
-[x]-   "/"
+- [x] "/"
 -   "/detail/:param"
-[x]-   "/contact"
-[x]-   "/login"
-[x]-   "/admin"
+- [x] "/contact"
+- [x] "/login"
+- [x] "/admin"
 
 The admin path won't appear in your navigation.
 
