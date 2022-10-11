@@ -27,7 +27,7 @@ Your app should have the following paths:
 - [x] "/contact"
 - [x] "/login"
 - [x] "/admin"
-
+~~This was mistaken text~~
 The admin path won't appear in your navigation.
 
 Use reusable components where appropriate and pay attention to how the components are arranged.
