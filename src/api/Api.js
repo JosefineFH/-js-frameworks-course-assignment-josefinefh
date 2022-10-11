@@ -1,0 +1,1 @@
+export const dataUrl = "https://josefineholth.no/api/content/wp-json/wp/v2/posts"

@@ -11,3 +11,47 @@
     border-color: #023030;
   }
 }
+
+.card-group{
+  max-width: 700px;
+  margin: auto;
+  a{
+    text-decoration: none;
+    &:hover{
+      .card{
+        color: white;
+        background-color: #023030;
+      }
+      .card-footer{
+        background-color: white;
+      }
+    }
+  }
+
+  .card{
+    margin: 10px;
+    width: 300px;
+    color: black;
+    .card-title, .card-text{
+      padding: 5px 20px;
+    }
+    .card-title{
+      padding-top: 20px;
+      text-align: center;
+    }
+
+  }
+
+}
+
+.author_name{
+  color: darkgray;
+}
+
+.blog_content{
+  font-size: 18px;
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+}

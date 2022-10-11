@@ -6,6 +6,7 @@ import Login from "./login/LoginPage.jsx";
 import Contact from "./contact/Contact";
 import { AuthProvider } from "./context/AuthContext";
 import Admin from "./admin/Admin";
+import GetPostDetails from "./components/Layout/PostDetails";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/posts/:id" element={<GetPostDetails />} />
         </Routes>
         </Router>
       </AuthProvider>
