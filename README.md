@@ -34,24 +34,24 @@ Your app should have the following paths:
 
 ### Home
 
-Find an API that returns at least:
+~~Find an API that returns at least:~~
 
--   an array of items
--   a single item retrieved by a parameter (id, name, slug, etc)
+~~-   an array of items~~
+~~-   a single item retrieved by a parameter (id, name, slug, etc)~~
 
-If you are using Next you can also hard-code json and return it from API routes created in `pages/api/*`.
+~~If you are using Next you can also hard-code json and return it from API routes created in `pages/api/*`.~~
 
-You can use your own Wordpress or Strapi or any other API that you have created for these calls but it must be publically hosted - it must not be running on your localhost.
+~~You can use your own Wordpress or Strapi or any other API that you have created for these calls but it must be publically hosted - it must not be running on your localhost.~~
 
-Display at least 2 properties from each result.
+~~Display at least 2 properties from each result.~~
 
-Each result should link to the detail page, passing a parameter in the URL.
+~~Each result should link to the detail page, passing a parameter in the URL.~~
 
 ### Detail
 
-Retrieve the parameter from the URL and use it in an API call to fetch one item.
+~~Retrieve the parameter from the URL and use it in an API call to fetch one item.~~
 
-Display at least 3 properties from the item.
+~~Display at least 3 properties from the item.~~
 
 ### Contact
 
