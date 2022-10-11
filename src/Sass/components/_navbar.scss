@@ -11,9 +11,10 @@
   .nav-link{
     color: black;
     font-weight: 500;
+    border-bottom: solid 2px white;
 
     &:hover{
-      color: goldenrod;
+      border-bottom: 2px solid #751001;
     }
   }
 }

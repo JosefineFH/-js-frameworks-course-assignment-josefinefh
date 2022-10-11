@@ -1,0 +1,13 @@
+.form_container{
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 30px;
+  border: solid lightgray 1px;
+  border-radius: 20px;
+
+  .btn{
+    background-color: #023030;
+    border-color: #023030;
+  }
+}

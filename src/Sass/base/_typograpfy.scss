@@ -1,0 +1,21 @@
+$title-font: "Quicksand - Light", serif;
+$title-2-font: 'Quicksand - Regular', serif;
+
+$base-font: "Montserrat", sans-serif;
+
+body{
+  font-family: $base-font;
+}
+
+h1, h2{
+  font-family: $title-font;
+  font-weight: 200;
+}
+h1{
+  text-align: center;
+}
+
+.navbar-brand{
+  padding-top: 0;
+  font-family: $title-2-font;
+}

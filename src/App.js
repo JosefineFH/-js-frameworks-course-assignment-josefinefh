@@ -1,29 +1,25 @@
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Home/Home";
 import Navigation from "./components/Navigation/Navbar";
-import Login from "./login/Login";
+import Login from "./login/LoginPage.jsx";
 import Contact from "./contact/Contact";
+import { AuthProvider } from "./context/AuthContext";
+import Admin from "./admin/Admin";
 
 function App() {
   return (
     <>
-      <Router>
-        <Navigation />
-        <Routes>
-          <Route path="/" element={<Home />} />
+      <AuthProvider>
+        <Router>
+          <Navigation />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
-        <Routes>
-          <Route path="/login" element={<Login />} />
-        </Routes>
-        <Routes>
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </Router>
+        </Router>
+      </AuthProvider>
     </>
   );
 }

@@ -1,5 +1,9 @@
+import Heading from "../components/Layout/Heading";
+import GetFromLocalStorage from "./CheckLogedIn";
+
 export default function Admin(){
+  GetFromLocalStorage();
   return(
-    <p>Admin</p>
+    <Heading title="Admin Page"/>
   )
 }
