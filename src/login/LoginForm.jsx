@@ -27,15 +27,12 @@ export default function LoginForm() {
   async function onSubmit(data) {
     setSubmitting(true);
     setLoginError(null);
-    console.log(data)
 
     try {
       const response = await axios.post(url, data);
-      console.log(response)
       setAuth(response.data);
       history("/admin");
     } catch (error) {
-      console.log(error)
       setLoginError(error.toString());
     } finally {
       setSubmitting(false);

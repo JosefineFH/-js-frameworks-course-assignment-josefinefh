@@ -1,6 +1,15 @@
+import Heading from "../components/Layout/Heading";
+import ContactForm from "./ContactForm";
+
 function Contact(){
   return(
-    <h2>Contact</h2>
+    <div className="container">
+      <Heading title="Contact Us"/>
+
+      <div className="form">
+        <ContactForm />
+      </div>
+    </div>
   )
 }
 export default Contact;

@@ -17,9 +17,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
-          <Route path="/admin" element={<Admin />} />
-          <Route path="/posts/:id" element={<GetPostDetails />} />
-        </Routes>
+            <Route path="/admin" element={<Admin />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/posts/:id" element={<GetPostDetails />} />
+          </Routes>
         </Router>
       </AuthProvider>
     </>
