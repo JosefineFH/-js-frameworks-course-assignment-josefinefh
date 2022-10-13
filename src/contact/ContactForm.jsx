@@ -4,7 +4,9 @@ import { useForm } from "react-hook-form";
 import FormError from "../components/common/FormError";
 
 export default function ContactForm() {
+  const [submitting, setSubmitting] = useState(false);
   const [loginError, setLoginError] = useState(null);
+  const message = document.querySelector(".message_container")
 
   const {
     register,
@@ -12,8 +14,13 @@ export default function ContactForm() {
     formState: { errors },
   } = useForm();
 
-  function onSubmit(data){
-    console.log(data)
+  function onSubmit(data) {
+
+    setLoginError(null);
+    setSubmitting(true);
+
+    message.innerHTML = `<div class="message"><p>Your data has been successfully send to us. </p></div>`
+
   }
 
   return (
@@ -39,7 +46,7 @@ export default function ContactForm() {
         <Form.Group className="mb-3" controlId="formBasicName">
           <Form.Label>Last name</Form.Label>
           <Form.Control
-            {...register("lastname", { required: true, minLength: 3 })}
+            {...register("lastname", { required: true, minLength: 4 })}
             type="text"
             placeholder="Enter your Last name..."
           />
@@ -68,13 +75,15 @@ export default function ContactForm() {
           )}
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicName">
-          <Form.Label>Message</Form.Label>
-          <Form.Select {...register("option", { required: true})}> 
-            <option value="1">Small select</option>
-          </Form.Select>
-          {errors.message && <FormError>{errors.message.message}</FormError>}
+        <Form.Group className="mb-3" controlId="formBasicOption">
+          <Form.Label>Options</Form.Label>
 
+          <Form.Select aria-label="Default select example"  {...register("option",  { minLength: 1 })}>
+            <option>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </Form.Select>
           {errors.message && (
             <div className="error-container">
               <p className="error">This field is required</p>
@@ -85,7 +94,7 @@ export default function ContactForm() {
         <Form.Group className="mb-3" controlId="formBasicName">
           <Form.Label>Message</Form.Label>
           <Form.Control
-            {...register("message", { required: true, minLength: 3 })}
+            {...register("message", { required: true, minLength: 10 })}
             as="textarea"
             placeholder="Enter your message..."
           />
@@ -105,7 +114,7 @@ export default function ContactForm() {
       </Form>
 
       <section>
-        <div className="message"></div>
+        <div className="message_container"></div>
       </section>
     </>
   )

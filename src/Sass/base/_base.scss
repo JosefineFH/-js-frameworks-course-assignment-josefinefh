@@ -11,3 +11,19 @@
   font-weight: 600px;
   background-color: pink;
 }
+.error{
+  padding-top: 10px;
+  color: darkred;
+}
+
+.message{
+  max-width: 400px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 40px;
+  color: black;
+  text-align: center;
+  border: solid 4px darkgreen;
+  font-weight: 600px;
+  background-color: rgb(196, 243, 211);
+}
